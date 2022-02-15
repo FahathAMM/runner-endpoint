@@ -19,7 +19,7 @@ composer install
 
 ```
 // copy the .env file
-cp .env.example .env
+ .env.example .env
 
 // generate app key
 php artisan key:generate
