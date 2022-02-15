@@ -18,6 +18,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        if (config('app.env') != 'production') {
+            $this->seedData();
+        }
+
+    }
+
+    public function seedData()
+    {
         //clear already data
         Meeting::truncate();
         Race::truncate();
