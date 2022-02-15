@@ -22,7 +22,7 @@ class Runner extends Model
 
     protected $hidden = [
         'race_id',
-        'id',
+        // 'id',
     ];
 
     public function lastRuns()
