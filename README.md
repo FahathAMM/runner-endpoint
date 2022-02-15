@@ -15,7 +15,7 @@ git pull origin master or fahath-dev
 composer install 
 ```
 
-## Deployment Server Initial Setup Instructions
+## Initial Setup Instructions
 
 ```
 // copy the .env file
