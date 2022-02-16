@@ -24,9 +24,7 @@ class RunnerTest extends TestCase
 
         $response
             ->assertStatus(200);
-        // ->assertJson([
-        //     'created' => true,
-        // ]);
+       
     }
 
 }
