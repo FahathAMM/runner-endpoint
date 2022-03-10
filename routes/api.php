@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->controller(RunnersController::class)->group(function () {
     Route::get('runner/{runnerId}', 'index');
+    Route::post('runner/', 'store');
+    Route::delete('runner/{runnerId}', 'destroy');
 });

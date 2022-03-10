@@ -22,11 +22,26 @@ class RunnersController extends Controller
     {
         try {
             return $this->repo->get($request);
-
-        } catch (\Throwable$th) {
+        } catch (\Throwable $th) {
             return response()->json(throw $th);
-
         }
     }
 
+    public function store(Request $request)
+    {
+        try {
+            return $this->repo->store($request);
+        } catch (\Throwable $th) {
+            return response()->json(throw $th);
+        }
+    }
+
+    public function destroy($id)
+    {
+        try {
+            return $this->repo->delete($id);
+        } catch (\Throwable $th) {
+            return response()->json(throw $th);
+        }
+    }
 }
