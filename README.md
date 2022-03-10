@@ -7,8 +7,7 @@ i am using laravel latest version (laravel 9) and also php 8.0
 
 ```
 // update the code to branch
-git pull origin master or fahath-dev
-
+git pull origin main
  
 
 // install with composer
